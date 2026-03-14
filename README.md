@@ -133,7 +133,7 @@ After running all steps, `results/` will contain:
 
 ## Citation
 
-If you use this codebase, please cite:
-> [Your paper title], Artificial Intelligence Review, Springer Nature, 2026.
+If you use this codebase, please cite the paper:
+
 
 All code released under MIT License.
