@@ -142,6 +142,6 @@ After running all steps, `results/` will contain:
 ## Citation
 
 If you use this codebase, please cite the paper:
-Syntethic data avialble at : https://ieee-dataport.org/documents/pet-breed-generative-augmentation-dataset (https://dx.doi.org/10.21227/tqn0-zz39) 
+Syntethic data avialble at : https://dx.doi.org/10.21227/tqn0-zz39
 
 All code released under MIT License.
