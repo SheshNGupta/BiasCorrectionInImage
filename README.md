@@ -8,18 +8,22 @@
 ```
 bias_benchmark/
 ├── scripts/
-│   ├── 01_prepare_dataset.py   — Download data, build splits, identify minority breeds
-│   ├── 02_train_baseline.py    — Train ResNet-50 on real data only
-│   ├── 03_train_fastgan.py     — Train FastGAN per minority breed + generate images
-│   ├── 04_train_sd_lora.py     — LoRA fine-tune SD 1.5 per breed + generate images
-│   ├── 05_train_augmented.py   — Train ResNet-50 on GAN / SD / Hybrid augmented data
-│   ├── 06_compute_fid.py       — Compute FID scores for image quality
-│   └── 07_compare_results.py   — Final comparison table + paper-ready figures
-├── data/                       — Created automatically
-│   ├── oxford_pet/             — Raw dataset + train/test splits
-│   └── synthetic/              — Generated images (fastgan/ and sd_lora/)
-├── models/                     — Saved model weights
-└── results/                    — JSON metrics, figures, summary CSV
+│   ├── 01_prepare_dataset.py             — Download data, build splits, identify minority breeds
+│   └── 01b_introduce_imbalance.py        — include the imbalance in the dataset
+│   └── 01c_traditional_augmentation.py   — performs traditional augmentation of the real images(flip, rotate,..)
+│   ├── 02_train_baseline.py              — Train ResNet-50 on real data only
+│   ├── 03_train_fastgan.py               — Train FastGAN per minority breed + generate images
+│   ├── 04_train_sd_lora.py               — LoRA fine-tune SD 1.5 per breed + generate images
+│   ├── 05_train_augmented.py             — Train ResNet-50 on GAN / SD / Hybrid augmented data
+│   ├── 06_compute_fid.py                 — Compute FID scores for image quality
+│   └── 07_compare_results.py             — Final comparison table + paper-ready figures
+│   └── 08_significance_tests.py          — Performs significance test across 3 seeds
+│   └── 09_tsne_analysis.py               — Performs tsne analysis accross 3 augementation tecniques
+├── data/                                 — Created automatically
+│   ├── oxford_pet/                       — Raw dataset + train/test splits
+│   └── synthetic/                        — Generated images (fastgan/ and sd_lora/)
+├── models/                               — Saved model weights
+└── results/                              — JSON metrics, figures, summary CSV
 ```
 
 ---
@@ -65,6 +69,8 @@ cd bias_benchmark
 
 # Day 1-2: Download dataset, build splits, check bias
 python scripts/01_prepare_dataset.py
+python scripts/01b_introduce_imbalance.py
+python scripts/01c_traditional_augmentation.py
 
 # Day 3-4: Train baseline (real data only) — ~1-2 hrs
 python scripts/02_train_baseline.py
@@ -84,6 +90,8 @@ python scripts/06_compute_fid.py
 
 # Day 12: Generate all comparison figures and summary table
 python scripts/07_compare_results.py
+python scripts/08_significance_tests.py
+python scripts/09_tsne_analysis.py
 ```
 
 ---
@@ -134,6 +142,6 @@ After running all steps, `results/` will contain:
 ## Citation
 
 If you use this codebase, please cite the paper:
-
+Syntethic data avialble at : https://ieee-dataport.org/documents/pet-breed-generative-augmentation-dataset (https://dx.doi.org/10.21227/tqn0-zz39) 
 
 All code released under MIT License.
