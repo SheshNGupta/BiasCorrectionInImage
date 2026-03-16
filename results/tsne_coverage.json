@@ -1,0 +1,50 @@
+{
+  "Abyssinian": {
+    "breed": "Abyssinian",
+    "FastGAN": 21.279,
+    "SD+LoRA": 8.216,
+    "Traditional": 1.955
+  },
+  "Bengal": {
+    "breed": "Bengal",
+    "FastGAN": 10.282,
+    "SD+LoRA": 10.675,
+    "Traditional": 2.769
+  },
+  "Birman": {
+    "breed": "Birman",
+    "FastGAN": 12.487,
+    "SD+LoRA": 7.902,
+    "Traditional": 2.434
+  },
+  "Bombay": {
+    "breed": "Bombay",
+    "FastGAN": 11.172,
+    "SD+LoRA": 9.01,
+    "Traditional": 2.806
+  },
+  "British_Shorthair": {
+    "breed": "British_Shorthair",
+    "FastGAN": 10.036,
+    "SD+LoRA": 7.39,
+    "Traditional": 1.591
+  },
+  "Egyptian_Mau": {
+    "breed": "Egyptian_Mau",
+    "FastGAN": 11.607,
+    "SD+LoRA": 4.58,
+    "Traditional": 2.505
+  },
+  "Maine_Coon": {
+    "breed": "Maine_Coon",
+    "FastGAN": 7.5,
+    "SD+LoRA": 9.525,
+    "Traditional": 1.336
+  },
+  "Persian": {
+    "breed": "Persian",
+    "FastGAN": 12.256,
+    "SD+LoRA": 4.062,
+    "Traditional": 2.073
+  }
+}

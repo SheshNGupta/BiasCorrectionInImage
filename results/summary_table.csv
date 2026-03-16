@@ -1,0 +1,11 @@
+Condition,Macro F1,Minority Avg Acc,Majority Avg Acc,Bias Gap (↓ better),GPU Mins
+"Baseline
+(Real Only)",0.906,0.803,0.937,0.134,40.5
+"Traditional
+Augmentation",0.897,0.781,0.934,0.153,72.4
+"FastGAN
+Augmented",0.892,0.772,0.931,0.159,82.2
+"SD+LoRA
+Augmented",0.917,0.844,0.939,0.095,66.2
+"Hybrid
+(GAN+SD)",0.903,0.806,0.933,0.126,65.7

@@ -1,0 +1,47 @@
+{
+  "Abyssinian": {
+    "traditional": 123.56,
+    "fastgan": 348.13,
+    "sd_lora": 118.91
+  },
+  "Bengal": {
+    "traditional": 115.84,
+    "fastgan": 307.64,
+    "sd_lora": 114.39
+  },
+  "Birman": {
+    "traditional": 64.16,
+    "fastgan": 214.72,
+    "sd_lora": 59.77
+  },
+  "Bombay": {
+    "traditional": 114.32,
+    "fastgan": 256.06,
+    "sd_lora": 127.04
+  },
+  "British_Shorthair": {
+    "traditional": 103.21,
+    "fastgan": 163.73,
+    "sd_lora": 105.27
+  },
+  "Egyptian_Mau": {
+    "traditional": 72.43,
+    "fastgan": 194.98,
+    "sd_lora": 79.58
+  },
+  "Maine_Coon": {
+    "traditional": 106.95,
+    "fastgan": 194.65,
+    "sd_lora": 108.79
+  },
+  "Persian": {
+    "traditional": 51.74,
+    "fastgan": 191.82,
+    "sd_lora": 53.16
+  },
+  "average": {
+    "traditional": 94.03,
+    "fastgan": 233.97,
+    "sd_lora": 95.86
+  }
+}
